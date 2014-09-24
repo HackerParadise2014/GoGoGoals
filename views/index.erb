@@ -8,6 +8,10 @@
 
 <h1>GO! GO! GOALS!</h1>
 
+  <% @goals.each do |goal| %>
+    <li><%= goal.name %></li>
+  <% end %>
+
 </body>
 
 </html>
