@@ -4,6 +4,8 @@ require 'data_mapper'
 
 # Routes
 get '/' do
+  Goal.create(name: "Who's a goal", description: "I am!")
+  @goals = Goal.all
   erb :index
 end
 
