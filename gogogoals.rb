@@ -6,6 +6,8 @@ require 'data_mapper'
 get '/' do
   Goal.create(name: "Who's a goal", description: "I am!")
   @goals = Goal.all
+
+  # View
   erb :index
 end
 
@@ -17,7 +19,7 @@ class Goal
   property :id, Serial
   property :name, String, :required => true
   property :description, Text, :lazy => false
-  property :worked_on, Boolean
+  property :worked_on, Boolean, :required => true, :default => false
   property :date_created, Date
 end
  
