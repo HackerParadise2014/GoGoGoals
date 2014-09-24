@@ -1,17 +1,16 @@
 <!DOCTYPE html>
-
 <html>
-<head>
-  <title>Go Go Goals</title>
-</head>
-<body>
-
-<h1>GO! GO! GOALS!</h1>
-
-  <% @goals.each do |goal| %>
-    <li><%= goal.name %></li>
-  <% end %>
-
-</body>
-
+	<head>
+		<title>Go Go Goals</title>
+	</head>
+	<body>
+		<h1>GO! GO! GOALS!</h1>
+		<% @goals.each do |goal| %>
+			<ul>
+				<li>
+					<span><%= goal.name %></span>
+				</li>
+			</ul>
+		<% end %>
+	</body>
 </html>
