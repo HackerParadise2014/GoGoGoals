@@ -13,8 +13,8 @@ DataMapper.setup(:default, ENV['DATABASE_URL'] || "sqlite3://#{Dir.pwd}/developm
 class Goal
   include DataMapper::Resource
   property :id, Serial
-  property :name, Text, :required => true
-  property :description, String
+  property :name, String, :required => true
+  property :description, Text, :lazy => false
   property :worked_on, Boolean
   property :date_created, Date
 end
