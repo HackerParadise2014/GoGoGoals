@@ -4,11 +4,16 @@ require 'data_mapper'
 
 # Routes
 get '/' do
-  Goal.create(name: "Who's a goal", description: "I am!")
   @goals = Goal.all
 
   # View
   erb :index
+end
+
+post '/goals' do
+#  Goal.create params[:goal]
+#  redirect to('/')
+  "#{params[:goal]}"
 end
 
 # Models
