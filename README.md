@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/HackerParadise2014/GoGoGoals.png?label=ready&title=Ready)](https://waffle.io/HackerParadise2014/GoGoGoals)
 # Go Go Goals!
 
 ## Iterations
