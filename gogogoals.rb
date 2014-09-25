@@ -11,9 +11,9 @@ get '/' do
 end
 
 post '/goals' do
-#  Goal.create params[:goal]
-#  redirect to('/')
-  "#{params[:goal]}"
+  Goal.create params[:goal]
+  redirect to('/')
+#  "#{params[:goal]}"
 end
 
 # Models
