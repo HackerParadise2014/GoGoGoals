@@ -11,7 +11,7 @@ get '/' do
   login_required
   @goals = Goal.all
   # View
-  erb :index
+  haml :index
 end
 
 post '/goals' do

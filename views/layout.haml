@@ -1,6 +1,15 @@
 !!!
 %html
-	%link{:href => "http://fonts.googleapis.com/css?family=Open+Sans:400,600", :rel => "stylesheet", :type => "text/css"}/
-	
-	.container
-		= yield
+	%head
+		%title Go Go Goals
+	%body
+
+		%link{:href => "http://fonts.googleapis.com/css?family=Open+Sans:400,600", :rel => "stylesheet", :type => "text/css"}/
+		:css
+			html {background: #292931;
+			font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+			color: #6C5B6D;}
+			.container {background: #423143;
+			border:1px solid rgba(255,255,255,0.1);}
+		.container
+			= yield
