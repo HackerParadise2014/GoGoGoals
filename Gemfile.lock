@@ -44,6 +44,8 @@ GEM
     dm-validations (1.2.0)
       dm-core (~> 1.2.0)
     fastercsv (1.5.5)
+    haml (4.0.5)
+      tilt
     json (1.8.1)
     json_pure (1.8.1)
     multi_json (1.10.1)
@@ -78,5 +80,6 @@ PLATFORMS
 
 DEPENDENCIES
   data_mapper
+  haml
   sinatra
   sinatra-authentication
