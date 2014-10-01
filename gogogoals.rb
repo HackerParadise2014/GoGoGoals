@@ -2,10 +2,7 @@ require 'sinatra'
 require 'data_mapper'
 require "sinatra-authentication"
 require 'haml'
-require 'sinatra/activerecord'
-#require 'rack-flash'
 use Rack::Session::Cookie, :secret => 'asdfug'
-#use Rack::Flash
 # Routes
 get '/' do
   login_required
@@ -17,7 +14,6 @@ end
 post '/goals' do
   Goal.create params[:goal]
   redirect to('/')
-#  "#{params[:goal]}"
 end
 
 # Models
