@@ -19,12 +19,10 @@ end
 # Models
 DataMapper.setup(:default, ENV['DATABASE_URL'] || "sqlite3://#{Dir.pwd}/development.db")
 
-=begin
 class DmUser
   property :name, String
-  has n, :goals
+#  has n, :goals
 end
-=end
 
 class Goal
   include DataMapper::Resource

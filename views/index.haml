@@ -1,7 +1,7 @@
 %h2 GO! GO! GOALS!
 %form{:action => "/goals", :method => "POST"}
 	%input{:name => "goal[name]", :type => "text", :placeholder => "Daily goal"}/
-	%input{:description => "goal[description]", :type => "text", :placeholder => "Description (optional)"}/
+	%input{:name => "goal[description]", :type => "text", :placeholder => "Description (optional)"}/
 	%input.button{:type => "submit", :value => "New Goal >>"}/
 - @goals.each do |goal|
 	%ul
