@@ -2,19 +2,10 @@
 %html
 	%head
 		%title Go Go Goals
+		%script{:src => "https://code.jquery.com/jquery-2.1.1.min.js"}
+		%script{:src => "//code.jquery.com/ui/1.11.1/jquery-ui.js"}
+		%script{:src => "//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"}
+		%link{:href => "//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"}/
 	%body
-
-		%link{:href => "http://fonts.googleapis.com/css?family=Open+Sans:400,600", :rel => "stylesheet", :type => "text/css"}/
-		:css
-			html {background: #292931;
-			font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
-			color: #6C5B6D;}
-			.container {background: #423143;
-			border:1px solid rgba(255,255,255,0.1);
-			max-width: 45em;
-			margin-right:auto;
-			margin-left:auto;}
-			li{border-top: 1px solid rgba(255,255,255,0.1);
-			border-bottom: 1px solid rgba(255,255,255,0.1);}
 		.container
 			= yield
