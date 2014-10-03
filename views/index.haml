@@ -12,5 +12,5 @@
 		%ul
 			%a.goal{:href => "/goals/#{goal.id}"}
 				%h3 #{goal.name}
-			%button.btn.btn-danger{:onclick => "deleteGoal(#{goal.id})"} 
-				%p Delete goal
+			%button.btn.btn-success{:onclick => "completedGoal(#{goal.id})"} Completed Today
+			%button.btn.btn-danger{:onclick => "deleteGoal(#{goal.id})"} Delete goal

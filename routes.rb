@@ -31,7 +31,12 @@ get '/goals/:id' do
   end
 end
 
+post '/goals/completed/:id' do
+  Goal.get(params[:id]).worked_on == true
+  "Goal completed!"
+end
+
 delete '/goals/delete/:id' do
   Goal.get(params[:id]).destroy
-  "Goal destroyed"
+  "Goal destroyed!"
 end
