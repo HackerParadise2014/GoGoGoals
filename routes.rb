@@ -1,7 +1,6 @@
 get '/' do
   login_required
   @goals = Goal.all
-  # View
   haml :index
 end
 
@@ -30,4 +29,9 @@ get '/goals/:id' do
   else
     redirect to('/')
   end
+end
+
+delete '/goals/delete/:id' do
+  Goal.get(params[:id]).destroy
+  "Goal destroyed"
 end

@@ -8,7 +8,6 @@ require './goal'
 
 use Rack::Session::Cookie, :secret => 'asdfug'
 
-# Models
 DataMapper.setup(:default, ENV['DATABASE_URL'] || "sqlite3://#{Dir.pwd}/development.db")
- 
-DataMapper.finalize
+
+DataMapper.finalize.auto_migrate!
